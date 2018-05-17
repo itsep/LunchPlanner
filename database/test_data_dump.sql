@@ -1,8 +1,8 @@
--- MySQL dump 10.16  Distrib 10.2.12-MariaDB, for osx10.13 (x86_64)
+-- MySQL dump 10.16  Distrib 10.2.14-MariaDB, for osx10.13 (x86_64)
 --
 -- Host: localhost    Database: lunch_planner
 -- ------------------------------------------------------
--- Server version	10.2.12-MariaDB
+-- Server version	10.2.14-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -27,7 +27,6 @@ INSERT INTO `account` VALUES (4,'1622019@stud.hs-mannheim.de','$2b$13$s1/sOos9GP
 INSERT INTO `account` VALUES (5,'1529702@stud.hs-mannheim.de','$2b$13$opJdGxl0na0PjELj7IJ4cuENdX9z/MFeGVGMjR8FtH.w.3w7zMzrK',5);
 INSERT INTO `account` VALUES (6,'ortega_marcel@yahoo.de','$2b$13$oWXw2UKkjnfn4AH12ylvFe6Hyi4.mwL.JBvDd4fycKpD0q7KDM7mu',6);
 INSERT INTO `account` VALUES (7,'LuShanty@freenet.de','$2b$13$Lqwe0Cbo57P/aP5IskPDjO9RRp9PO.53VMpfiXefhv1/vwh4vlGf2',7);
-INSERT INTO `account` VALUES (8,'test-login@email.com','$2b$13$HYHYcDqYFULG/PDYOAMpWO.UUn2ekrP28Jgpotm1jxZQ/TDqg4VWC',NULL);
 /*!40000 ALTER TABLE `account` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -37,6 +36,31 @@ UNLOCK TABLES;
 
 LOCK TABLES `join_up_at` WRITE;
 /*!40000 ALTER TABLE `join_up_at` DISABLE KEYS */;
+INSERT INTO `join_up_at` VALUES (1, 1, '10:30', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (2, 1, '10:30', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (3, 1, '10:30', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (1, 1, '11:30', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (2, 1, '11:30', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (5, 1, '11:30', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (3, 1, '11:30', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (1, 1, '12:00', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (2, 1, '12:00', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (5, 1, '12:00', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (3, 1, '12:00', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (4, 1, '12:00', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (1, 1, '12:30', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (2, 1, '12:30', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (3, 1, '12:30', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (4, 1, '12:30', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (5, 1, '12:30', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (6, 1, '12:30', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (3, 1, '13:00', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (4, 1, '13:00', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (4, 1, '14:30', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (1, 2, '12:00', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (5, 3, '13:00', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (6, 4, '14:30', '16.05.2018');
+INSERT INTO `join_up_at` VALUES (7, 4, '15:00', '16.05.2018');
 /*!40000 ALTER TABLE `join_up_at` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -46,6 +70,10 @@ UNLOCK TABLES;
 
 LOCK TABLES `location` WRITE;
 /*!40000 ALTER TABLE `location` DISABLE KEYS */;
+INSERT INTO `location` VALUES (1,'Dean & David','\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',1);
+INSERT INTO `location` VALUES (2,'Pizzeria','\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',1);
+INSERT INTO `location` VALUES (3,'Metzgerei','\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',1);
+INSERT INTO `location` VALUES (4,'vsf-dining-room','\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',1);
 /*!40000 ALTER TABLE `location` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -103,7 +131,7 @@ INSERT INTO `user` VALUES (3,'Ferhat','Ayaydin',NULL);
 INSERT INTO `user` VALUES (4,'Marc','Mehrer',NULL);
 INSERT INTO `user` VALUES (5,'Fabian','Munzinger',NULL);
 INSERT INTO `user` VALUES (6,'Marcel','Ortega',NULL);
-INSERT INTO `user` VALUES (7,'Luisa','Müller',NULL);
+INSERT INTO `user` VALUES (7,'Luisa','M�ller',NULL);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
